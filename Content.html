@@ -13,8 +13,16 @@
     </HEAD>
     <BODY>
         <I>Chapter 5 Links and Lists</I>
+        <BR><BR>
+        <B>Quick Links:</B>
+        <UL>
+            <LI><A HREF="#heading1">Creating Graphical Hyperlinks</A></LI>
+            <LI><A HREF="#heading2">Linking To A Section Of A Document</A></LI>
+        </UL>
         <BR>
-        <H1>Creating Graphical Hyperlinks</H1>
+        <A NAME="heading1">
+            <H1>Creating Graphical Hyperlinks</H1>
+        </A>
         <P>
             In addition to text, you can also use images as hyperlinks, adding a little "pizazz" to your pages.
             Doing so is easy to do--just put an &lt;IMG&gt; element in the &lt;A&gt; element insted of text.
@@ -62,17 +70,22 @@
         navigates to the hyperlink's target, <A HREF="https://play.google.com"><B>http://W3C.org</B></A>. Note also that you can use the
         <B>&lt;IMG&gt;</B> element's <B>ALT</B> attribute to add a tool tip to the hyperlink, which appears
         when the mouse rests over the hyperlink image showing in the hyperlink's target, as in Figure 5.2.
+        <IMG SRC = "https://media.istockphoto.com/id/583809524/photo/alberta-wilderness-near-banff.jpg?s=2048x2048&w=is&k=20&c=W2WIEh64AZfOEd7TuMzWQUVIBWXiHpytdWHDNEKxhPo=" ALT="Just an Image :)" HEIGHT=400 WIDTH=750 VSPACE=40>
         <BR>
         <HR>
         <B>TIP:</B> Want to turn the border of a graphical hyperlink off or make it wider? Use the
         <B>&lt;IMG&gt;</B> element's <B>BORDER</B> attribute. <B>BORDER=0</B> turns off the border.
         This is probably not advisable for hperlinks because the border is how the user knows it's a hyperlink.
         <HR>
-        <H1>
-            Linking To A Section Of A Document
-        </H1>
+        <A NAME="heading2">
+            <H1>
+                Linking To A Section Of A Document
+            </H1>
+        </A>
         It's also possible to link to a section of a document instead of linking to the document as a
         whole. When you navigate to a document using the document's URL, the browser opens the document
-        and positions the top of the document at the top
+        and positions the top of the document at the top of the browser window. Say, however that you've
+        written a training maual with a hundred individual topics in one page--how can you navigate to one of the
+        topics, not just to the top of the page?
     </BODY>
 </HTML>
