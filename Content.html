@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<HTML>
+    <HEAD>
+        <TITLE>
+            A Page
+        </TITLE>
+        <STYLE>
+            a:link{color: gray}
+            a:visited{color: gray}
+            a:hover{color: black}
+            a:active{color:white}
+        </STYLE>
+    </HEAD>
+    <BODY>
+        <I>Chapter 5 Links and Lists</I>
+        <BR>
+        <H1>Creating Graphical Hyperlinks</H1>
+        <P>
+            In addition to text, you can also use images as hyperlinks, adding a little "pizazz" to your pages.
+            Doing so is easy to do--just put an &lt;IMG&gt; element in the &lt;A&gt; element insted of text.
+            Here's an example showing how this works:
+            <BR><BR>
+            <CODE>
+                &lt;HTML&gt;
+                <BR>
+                <SPAN STYLE="margin: 40px">&lt;HEAD&gt;</SPAN>
+                <BR>
+                <SPAN STYLE="margin: 80px">&lt;TITLE&gt;</SPAN>
+                <BR>
+                <SPAN STYLE="margin: 120px">Creating A Graphical Hyperlink</SPAN>
+                <BR>
+                <SPAN STYLE="margin: 80px">&lt;/TITLE&gt;</SPAN>
+                <BR>
+                <SPAN STYLE="margin: 40px">&lt;/HEAD&gt;</SPAN>
+                <BR>
+                <SPAN STYLE="margin: 40px">&lt;BODY&gt;</SPAN>
+                <BR>
+                <SPAN STYLE="margin: 80px">&lt;CENTER&gt;</SPAN>
+                <BR>
+                <SPAN STYLE="margin: 120px">&lt;H1&gt;</SPAN>
+                <BR>
+                <SPAN STYLE="margin: 160px">Creating A Graphical Hyperlink</SPAN>
+                <BR>
+                <SPAN STYLE="margin: 120px">&lt;/H1&gt;</SPAN>
+                <BR>
+                <SPAN STYLE="margin: 120px; background-color: rgb(226,226,226)">&lt;A HREF="http://w3c.org"&gt;</SPAN>
+                <BR>
+                <SPAN STYLE="margin: 160px;background-color: rgb(226,226,226)">&lt;IMG WIDTH=277 HEIGHT=114 SRC="clickme.gif"</SPAN>
+                <BR>
+                <SPAN STYLE="margin: 200px;background-color: rgb(226,226,226)">ALT="Click me to go to W3C!"&gt;</SPAN>
+                <BR>
+                <SPAN STYLE="margin: 120px;background-color: rgb(226,226,226)">&lt;/A&gt;</SPAN>
+                <BR>
+                <SPAN STYLE="margin: 80px">&lt;/CENTER&gt;</SPAN>
+                <BR>
+                <SPAN STYLE="margin: 40px">&lt;/BODY&gt;</SPAN>
+                <BR>
+                &lt;/HTML&gt;
+            </CODE>
+        </P>
+        The results of this HTML appear in Figure 5.2. When the user clicks the image in the figure, the browser
+        navigates to the hyperlink's target, <A HREF="https://play.google.com"><B>http://W3C.org</B></A>. Note also that you can use the
+        <B>&lt;IMG&gt;</B> element's <B>ALT</B> attribute to add a tool tip to the hyperlink, which appears
+        when the mouse rests over the hyperlink image showing in the hyperlink's target, as in Figure 5.2.
+        <BR>
+        <HR>
+        <B>TIP:</B> Want to turn the border of a graphical hyperlink off or make it wider? Use the
+        <B>&lt;IMG&gt;</B> element's <B>BORDER</B> attribute. <B>BORDER=0</B> turns off the border.
+        This is probably not advisable for hperlinks because the border is how the user knows it's a hyperlink.
+        <HR>
+        <H1>
+            Linking To A Section Of A Document
+        </H1>
+        It's also possible to link to a section of a document instead of linking to the document as a
+        whole. When you navigate to a document using the document's URL, the browser opens the document
+        and positions the top of the document at the top
+    </BODY>
+</HTML>
