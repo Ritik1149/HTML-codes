@@ -1,5 +1,6 @@
 body
 {
+    /*background: linear-gradient(to bottom right, gray,white);*/
     background-repeat: no-repeat; 
     background-attachment: fixed;
 }
@@ -45,6 +46,8 @@ span
     margin-left: 30px;
     margin-bottom: 30px;
     background-color: cyan;
+    border-radius: 50px;
+    height: 16px;
 }
 
 .option
@@ -58,4 +61,8 @@ label:hover
     animation: choiceHover;
     
     animation-duration: 0.5s;
+}
+input:active
+{
+    background-color: #0afc0e;
 }
