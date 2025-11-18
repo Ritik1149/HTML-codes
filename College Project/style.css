@@ -18,8 +18,44 @@ h1
     padding: 20px;
 
 }
-#Question
+span
 {
+    margin-left: 10px;
+    font-family: sans-serif;
+}
+
+@keyframes choiceHover
+{
+    0%{border-bottom-style:dashed;border-bottom-width:1px;border-bottom-color:blue;}
+    50%{border-bottom-style:dashed;border-bottom-width:5px;border-bottom-color:blue;}
+    100%{border-bottom-style:dashed;border-bottom-width:1px;border-bottom-color:blue;}
+}
+
+.button
+{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+.option
+{
+    font-family: Josefin Sans;
+    font-size: 22px;
+}
+label:hover
+{
+    animation: choiceHover 0.5s;
+    
+    cursor:pointer;
+}
+input:active
+{
+    background-color: #0afc0e;
+}
+
+p
+{
+    margin-top:0px;
     font-family:"Cinzel","Sans Serif";
     font-weight:bold;
     font-size: 250%;
@@ -28,41 +64,18 @@ h1
     border-width:1px;
     border-radius: 20px;
     height: 80px;
-    margin-bottom: 50px;
-}
-span
-{
-    margin-left: 10px;
+    margin-bottom: 50px;    
 }
 
-@keyframes choiceHover
+button /*for next button*/
 {
-    50%{font-size: 28px;}
-    100%{font-size: 22px;}
-}
-
-.button
-{
-    margin-left: 30px;
-    margin-bottom: 30px;
-    background-color: cyan;
-    border-radius: 50px;
-    height: 16px;
-}
-
-.option
-{
-    font-family: Josefin Sans;
-    font-size: 22px;
-
-}
-label:hover
-{
-    animation: choiceHover;
-    
-    animation-duration: 0.5s;
-}
-input:active
-{
-    background-color: #0afc0e;
+    margin-top:5%;
+    margin-left:90%;
+    background-color:black;
+    color:#89eb34;
+    height: 40px;
+    width: 80px;
+    font-family:"Cinzel","Sans Serif";
+    font-weight:bold;
+    font-size:18px;
 }
