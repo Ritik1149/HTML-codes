@@ -1,5 +1,7 @@
 // #AAAAaaaagggggg!!
-let allQuestions=[{question:"Q1. What is the rarest eye colour?", name:"q1",options:{"1":"Yellow","2":"Red","3":"Green","4":"Blue"}},{question:"Q2.Which is the only animal in the world that cannot jump?",name:"Q2",options:{"1":"Rhinoceros","2":"Elephant","3":"Hippopotamus","4":"Giraffe"}},{question:"Q3. Which animal cannot stick its tongue out?",name:"Q3",options:{"1": "Crocodile", "2":"Alligator","3":"Komodo Dragon", "4":"Snake"}}];
+let allQuestions=[{question:"Q1. What is the rarest eye colour?", name:"Q1",options:{"1":"Yellow","2":"Red","3":"Green","4":"Blue"}},{question:"Q2.Which is the only animal in the world that cannot jump?",name:"Q2",options:{"1":"Rhinoceros","2":"Elephant","3":"Hippopotamus","4":"Giraffe"}},{question:"Q3. Which animal cannot stick its tongue out?",name:"Q3",options:{"1": "Crocodile", "2":"Alligator","3":"Komodo Dragon", "4":"Snake"}}];
+
+let correctAnswers={"Q1":"1", "Q2":" 2", "Q3":" 3"};
 
 let currentQuestionIndex=0;
 let userAnswers={};
