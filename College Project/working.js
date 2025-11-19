@@ -3,6 +3,9 @@ let allQuestions=[{question:"Q1. What is the rarest eye colour?", name:"Q1",opti
 
 let correctAnswers={"Q1":"1", "Q2":" 2", "Q3":" 3"};
 
+let maxMarks=3;
+let userMarks=0;
+
 let currentQuestionIndex=0;
 let userAnswers={};
 
@@ -71,10 +74,18 @@ nextButton.addEventListener('click',function (){
     else
     {
         alert("Quiz completed! Check the console for your answers.");
-        console.log("Final Answers: ",userAnswers); //userAnswers ko hi pel diya. Isko update karna hai
+        for(let a in userAnswers){
+            if(userAnswers[a]===correctAnswers[a])
+    userMarks++;
+else
+    continue;
+}
 
         questionTextElement.innerText="Quiz Finished!"; //P tag ko humne update kiya
         optionsContainerElement.innerHTML=''; //form ko at the end khaali kar diya
+
+const result=document.createElement("p");
+result.innerText("Score= ",userMarks,"/",maxMarks);
         nextButton.style.display='none'; //button ko gaayab kar diya
     }
 }
